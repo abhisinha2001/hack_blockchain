@@ -97,12 +97,35 @@ class _MyAppState extends State<MyApp> {
                       children: [
                         Padding(
                           padding: const EdgeInsets.symmetric(horizontal: 40),
-                          child: Container(
-                            height: 60,
-                            width: double.infinity,
-                            decoration: BoxDecoration(
-                              color: lightGrey,
-                              borderRadius: BorderRadius.circular(20),
+                          child: GestureDetector(
+                            onTap: () {},
+                            child: Container(
+                              height: 60,
+                              width: double.infinity,
+                              decoration: BoxDecoration(
+                                color: lightGrey,
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Center(
+                                child: Row(
+                                  mainAxisAlignment:
+                                      MainAxisAlignment.spaceEvenly,
+                                  children: [
+                                    Text(
+                                      'Transfer Funds',
+                                      style: TextStyle(
+                                        fontSize: 30,
+                                        fontWeight: FontWeight.bold,
+                                        color: navyBlue1,
+                                      ),
+                                    ),
+                                    Icon(
+                                      Icons.arrow_right_alt,
+                                      size: 50,
+                                    ),
+                                  ],
+                                ),
+                              ),
                             ),
                           ),
                         ),
