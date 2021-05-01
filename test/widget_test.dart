@@ -9,6 +9,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:hack_blockchain/app.dart';
 import 'package:hack_blockchain/main.dart';
+import 'package:hack_blockchain/src/Services/Tezos.dart';
 
 void main() {
   testWidgets('Counter increments smoke test', (WidgetTester tester) async {
